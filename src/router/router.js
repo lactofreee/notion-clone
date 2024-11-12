@@ -10,5 +10,6 @@ const fetchDocumentsInfo = async () => {
 const documents = fetchDocumentsInfo()
 
 const createDocumentList = () => {
+  console.log('hello');
   
 }
