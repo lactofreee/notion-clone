@@ -7,25 +7,26 @@
     <link rel="stylesheet" href="./styles/main.css" />
   </head>
   <body class="screen">
+    <!-- 사이드바 -->
     <header class="screen__sidebar">
-      <h1 class="sidebar__pageTitle">강수영의 Notion</h1>
+      <!-- 사용자 -->
+      <div class="sidebar__pageTitle">
+        <div class="sidebar__titleContainer">
+          <div>강수영 스페이스</div>
+          <div>아이콘</div>
+        </div>
+      </div>
       <nav id="sidebar__menuWrapper" class="sidebar__menuWrapper">
-        <!-- <ul
-          id="sidebar__menuWrapper--documets"
-          class="sidebar__menuWrapper--documets"
-        >
-          <li class="sidebar__menuWrapper--documet">
-            <a href="https://programmers.co.kr/">document1</a>
-          </li>
-        </ul> -->
       </nav>
     </header>
+    <!-- 메인 -->
     <main class="screen__pageView">
       <ul class="pageView__breadCrumbs">
         <li>bread crumb..</li>
+        <button>삭제</button>
       </ul>
-      <section id="pageView__editor">
-        
+      <section class="editor">
+        <div id="editor__body" class="editor__body"></div>
       </section>
     </main>
     <script defer src="./src/components/Sidebar.js"></script>

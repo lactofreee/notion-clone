@@ -27,7 +27,7 @@ const router = () => {
   const path = window.location.pathname;
   const content =
     routes.get(path) || "<h1>404 Not Found</h1><p>The page does not exist.</p>";
-  document.getElementById("pageView__editor").innerHTML = content;
+  document.getElementById("editor__body").innerHTML = content;
 };
 
 const navigate = (path) => {
