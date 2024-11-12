@@ -11,13 +11,13 @@ const getAllDocuments = async () => {
   return await data.json();
 };
 
-const displayDocsList = async () => {
-  const docsInfo = await getAllDocuments();
-  docsInfo.forEach((docInfo) => {
-    const newDocLi = document.createElement("li");
-    newDocLi.innerHTML = `<a href='' id="sidebar__menuWrapper--documentLink" data-url="doc${docInfo.id}">${docInfo.title}</a>`;
-    menuWrapperDocumets.appendChild(newDocLi);
-  });
-};
+// const displayDocsList = async () => {
+//   const docsInfo = await getAllDocuments();
+//   docsInfo.forEach((docInfo) => {
+//     const newDocLi = document.createElement("li");
+//     newDocLi.innerHTML = `<a href='' id="sidebar__menuWrapper--documentLink" data-url="doc${docInfo.id}">${docInfo.title}</a>`;
+//     menuWrapperDocumets.appendChild(newDocLi);
+//   });
+// };
 
-displayDocsList();
+// displayDocsList();

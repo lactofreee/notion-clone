@@ -143,3 +143,9 @@ body {
   flex-direction: column;
   gap: 1.43rem;
 }
+
+.sidebar__menuWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.42rem;
+}
