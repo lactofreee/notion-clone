@@ -1,12 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Notion-Clone</title>
-  <link rel="stylesheet" href="./styles/main.css">
-</head>
-<body>
-  <script defer src=""></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notion-Clone</title>
+    <link rel="stylesheet" href="./styles/main.css" />
+  </head>
+  <body class="screen">
+    <header class="screen__sidebar">
+      <h1 class="sidebar__pageTitle">강수영의 Notion</h1>
+      <nav id="sidebar__menuWrapper" class="sidebar__menuWrapper">
+        <ul
+          id="sidebar__menuWrapper--documets"
+          class="sidebar__menuWrapper--documets"
+        >
+          <li class="sidebar__menuWrapper--documet">
+            <a href="">document1</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="screen__pageView">
+      <ul class="pageView__breadCrumbs">
+        <li>bread crumb..</li>
+      </ul>
+      <section class="pageView__editor">
+        
+      </section>
+    </main>
+    <script defer src="./src/components/Sidebar.js"></script>
+    <script defer src="./src/router/router.js"></script>
+  </body>
 </html>
