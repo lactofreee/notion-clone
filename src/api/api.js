@@ -1,10 +1,28 @@
+import { BASE_URL } from "../constants/urls.js";
 // api.js
 // API GET 요청으로 문서 목록 가져오기
-export const fetchDocumentsInfo = async () => {
-  const response = await fetch("https://kdt-api.fe.dev-cos.com/documents", {
-    headers: {
-      "x-username": "teamouse",
-    },
-  });
-  return await response.json();
+export const getRootDocuments = async () => {
+  try {
+    const response = await fetch(BASE_URL, {
+      headers: {
+        "x-username": "teamouse1",
+      },
+    });
+    return await response.json();
+  } catch (error) {
+    console.error(error);
+  }
+};
+
+export const getTargetContent = async (docId) => {
+  try {
+    const response = await fetch(BASE_URL, {
+      headers: {
+        "x-username": "teamouse1",
+      },
+    });
+    return await response.json()
+  } catch (error) {
+    console.error(error);
+  }
 };
