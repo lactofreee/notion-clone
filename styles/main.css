@@ -85,7 +85,7 @@ video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
-  box-sizing: content-box;
+  box-sizing: border-box;
 }
 /* HTML5 display-role reset for older browsers */
 article,
@@ -126,21 +126,46 @@ table {
 }
 a {
   text-decoration: none;
-  color: #d4d4d4;
-}
-body {
-  height: 100vh;
-  font-size: 14px;
-  background-color: #191919;
-  color: #d4d4d4;
-  display: grid;
-  grid-template-columns: 1fr 5fr;
+  color: var(--black300);
 }
 
+body {
+  width: 100%;
+  height: 100vh;
+  font-size: 14px;
+  background-color: var(--white);
+  color: var(--black300);
+  display: flex;
+}
+
+textarea {
+  resize: none;
+  overflow-y: hidden;
+  min-height: 50px;
+  height: auto;
+  width: 100%;
+  background: none;
+  border: none;
+  outline: none;
+  -webkit-appearance: none;
+  box-shadow: none;
+}
+
+textarea:focus {
+  outline: none;
+  box-shadow: none;
+  border: none;
+}
+
+/* 사이드 바 ---------------------------------- */
 .screen__sidebar {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   width: 250px;
-  background-color: #202020;
+  min-width: 250px; /* flex-shrink 방지 */
+  transition: width 0.3s ease;
+  background-color: var(--black100);
+  padding-inline: 8px;
+
   display: flex;
   flex-direction: column;
   gap: 1.43rem;
@@ -150,14 +175,17 @@ body {
   justify-content: center;
   align-items: center;
   height: 44px;
-  border: 1px solid red;
-  padding: 0 16px;
+  padding: 0.86rem 1rem;
 }
 .sidebar__titleContainer {
-  border: 1px solid red;
   width: 100%;
   display: flex;
   justify-content: space-between;
+}
+.sidebar__menuWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
 }
 .sidebar__menuWrapper--documets {
   border: 1px solid red;
@@ -170,7 +198,11 @@ body {
   display: flex;
   align-items: center;
 }
+/* 사이드 바 ---------------------------------- */
+
+
 .screen__pageView {
+  flex : 1; /* 남은 공간 모두 차지 */
   border: 1px solid green;
   display: flex;
   flex-direction: column;
@@ -194,8 +226,4 @@ body {
   border: 1px solid blue;
   width: 708px;
 }
-.sidebar__menuWrapper {
-  display: flex;
-  flex-direction: column;
-  gap: 14px
-}
+

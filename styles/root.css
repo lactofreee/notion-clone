@@ -1,0 +1,23 @@
+:root {
+  /* Object Color */
+  /* white */
+  --white: #ffffff;
+
+  /* gray */
+  --gray100: #f7f7f5;
+
+  /* background */
+  --bg100: rgba(0, 0, 0, 0.3);
+  --bg200: rgba(0, 0, 0, 0.6);
+
+  /* black */
+  --black100: #9b9a97;
+  --black200: #5f5e5b;
+  --black300: #37352f;
+  --black400: #1d1b16;
+  --black500: #0f0f0f;
+
+  /* box-shadow */
+  --box-shadow300: 0 4px 4px -1px rgba(0, 0, 0, 0.2),
+    0 4px 4px -1px rgba(0, 0, 0, 0.2);
+}
