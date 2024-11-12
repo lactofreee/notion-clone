@@ -7,25 +7,52 @@ assignees: ''
 
 ---
 
-name: "✨ Feature"
-description: "새로운 기능 추가"
-labels: ["feature"]
-body:
-  - type: textarea
-    attributes:
-      label: 📄 설명
-      description: 새로운 기능에 대한 설명을 작성해 주세요.
-      placeholder: 자세히 적을수록 좋습니다!
-    validations:
-      required: true
-  - type: textarea
-    attributes:
-      label: ✅ 작업할 내용
-      description: 할 일을 체크박스 형태로 작성해주세요.
-      placeholder: 최대한 세분화 해서 적어주세요!
-    validations:
-      required: true
-  - type: textarea
-    attributes:
-      label: 🙋🏻 참고 자료
-      description: 참고 자료가 있다면 작성해 주세요.
+## 📌 기능 개요 (Feature Overview)
+- 구현하려는 기능의 간략한 설명을 작성해 주세요. 
+
+### 목적 (Purpose)
+- 이 기능이 해결하고자 하는 문제나 필요성에 대해 설명해 주세요.
+
+---
+
+## 🎯 기대 효과 (Expected Benefits)
+- 기능이 완성되었을 때 기대되는 결과와 효과를 설명해 주세요.
+- 예: 사용자 경험 개선, 운영 효율성 증대 등
+
+---
+
+## 📝 상세 요구 사항 (Detailed Requirements)
+- 구현에 필요한 구체적인 요구 사항들을 나열해 주세요.
+
+### 기능 목록 (Feature List)
+1. [ ] 필요한 기능의 하위 목록을 나열해 주세요.
+2. [ ] 예: "사용자 프로필 페이지에 편집 기능 추가"
+
+### UI 요구 사항 (UI Requirements)
+- 사용자 인터페이스와 관련된 요구 사항이나 디자인이 있다면 설명해 주세요. (필요시 스케치 또는 디자인 파일 링크 포함)
+
+---
+
+## ⚙️ 기술 요구 사항 (Technical Requirements)
+- 기능 구현에 필요한 기술적 요구 사항이나 제약 사항이 있다면 작성해 주세요.
+- 예: API 명세, 데이터베이스 스키마, 성능 요구사항 등
+
+---
+
+## 🔄 연관 작업 (Related Tasks)
+- 기능 구현과 관련된 다른 작업, 의존성 있는 작업이 있다면 기재해 주세요.
+- 예: "이 기능을 위해 #123 이슈가 완료되어야 함"
+
+---
+
+## 🗂 참고 자료 (Additional Resources)
+- 구현에 필요한 추가 자료나 참고 링크를 첨부해 주세요.
+  - [디자인 파일 링크](URL)
+  - [API 문서 링크](URL)
+
+---
+
+## ✅ 체크리스트 (Checklist)
+- [ ] 요구 사항이 명확하게 정의되었는지 확인했습니다.
+- [ ] 필요한 리소스와 링크가 포함되었는지 확인했습니다.
+- [ ] 관련 작업과 의존성을 모두 확인했습니다.
