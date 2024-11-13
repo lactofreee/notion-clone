@@ -69,7 +69,7 @@ export const addDoc = async (parentId) => {
   try {
     const newDocument = await postNewDocument("제목 없음", parentId);
     createDocumentItem(newDocument.id, newDocument.title, subDocumentList);
-    navigate(`/documents/${parentId}/${newDocument.id}`);
+    navigate(`/documents/${newDocument.id}`);
   } catch (error) {
     console.error("하위 페이지 생성 실패:", error);
     alert("하위 페이지 생성에 실패했습니다.");
