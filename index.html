@@ -42,7 +42,10 @@
       <ul class="pageView__breadCrumbs">
         <!-- 사이드바 메뉴 버튼 -->
         <div class="breadCrumbs__wrap">
-          <button class="sideBar__button">
+          <button
+            class="sideBar__button breadCrumbs__hamburger--hidden"
+            id="sideBar__hamburger"
+          >
             <img
               src="./src/asset/menu-burger.svg"
               alt=""
@@ -58,7 +61,7 @@
         <div id="editor__body" class="editor__body"></div>
       </section>
     </main>
-    <script type="module" src="./src/main.js"></script>
     <script type="module" src="./src/components/Sidebar.js"></script>
+    <script type="module" src="./src/main.js"></script>
   </body>
 </html>
