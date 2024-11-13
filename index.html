@@ -25,7 +25,10 @@
                 class="sidebar__icon"
               />
             </button>
-            <button class="sideBar__button">
+            <button
+              id="sidebar__createDocument--button"
+              class="sideBar__button"
+            >
               <img
                 src="./src/asset/edit.svg"
                 alt="edit_btn"
@@ -35,7 +38,9 @@
           </div>
         </div>
       </div>
-      <nav id="sidebar__menuWrapper" class="sidebar__menuWrapper"></nav>
+      <nav id="sidebar__menuWrapper" class="sidebar__menuWrapper">
+        <a href="/documents">랜딩 페이지</a>
+      </nav>
     </header>
     <!-- 메인 -->
     <main class="screen__pageView">
@@ -54,14 +59,13 @@
           </button>
           <li>bread crumb..</li>
         </div>
-
         <button>삭제</button>
       </ul>
       <section class="editor">
         <div id="editor__body" class="editor__body"></div>
       </section>
     </main>
-    <script type="module" src="./src/components/Sidebar.js"></script>
     <script type="module" src="./src/main.js"></script>
+    <script type="module" src="./src/components/Sidebar.js"></script>
   </body>
 </html>

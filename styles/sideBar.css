@@ -8,10 +8,10 @@
   transition: width 0.3s ease;
   background-color: var(--gray100);
   padding-inline: 8px;
+
   display: flex;
   flex-direction: column;
   gap: 1.43rem;
-  transform: translateX(0);
 }
 .sidebar__pageTitle {
   display: flex;
