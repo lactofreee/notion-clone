@@ -1,10 +1,9 @@
 @import url("/styles/variables.css");
 
 .screen__sidebar {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   width: 250px;
-  /* flex-shrink 방지 */
-  min-width: 250px;
+  min-width: 250px; /* flex-shrink 방지 */
   transition: width 0.3s ease;
   background-color: var(--gray100);
   padding-inline: 8px;
@@ -59,7 +58,7 @@
 }
 
 /* 사이드바 아이콘 */
-.sideBar__button {
+.sideBar__hideButton {
   box-sizing: border-box;
   width: 20px;
   height: 20px;
@@ -69,7 +68,7 @@
   background: none;
   cursor: pointer;
 }
-.sideBar__button:hover {
+.sideBar__hideButton:hover {
   background-color: var(--bg100);
   border-radius: 4px;
 }
