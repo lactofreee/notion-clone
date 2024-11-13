@@ -1,11 +1,11 @@
-import { BASE_URL } from "../constants/urls.js";
+import { BASE_URL, x_username } from "../constants/urls.js";
 // api.js
 // API GET 요청으로 문서 목록 가져오기
 export const getRootDocuments = async () => {
   try {
     const response = await fetch(BASE_URL, {
       headers: {
-        "x-username": "teamouse2",
+        "x-username": x_username,
       },
     });
     return await response.json();
@@ -18,10 +18,10 @@ export const getTargetContent = async (docId) => {
   try {
     const response = await fetch(BASE_URL, {
       headers: {
-        "x-username": "teamouse2",
+        "x-username": x_username,
       },
     });
-    return await response.json()
+    return await response.json();
   } catch (error) {
     console.error(error);
   }
@@ -32,7 +32,7 @@ export const postNewDocument = async (title, parentId = null) => {
     const response = await fetch(BASE_URL, {
       method: "POST",
       headers: {
-        "x-username": "teamouse2",
+        "x-username": x_username,
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
