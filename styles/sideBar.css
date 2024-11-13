@@ -7,10 +7,10 @@
   transition: width 0.3s ease;
   background-color: var(--gray100);
   padding-inline: 8px;
+
   display: flex;
   flex-direction: column;
   gap: 1.43rem;
-  transform: translateX(0);
 }
 .sidebar__pageTitle {
   display: flex;
@@ -58,7 +58,7 @@
 }
 
 /* 사이드바 아이콘 */
-.sideBar__button {
+.sideBar__hideButton {
   box-sizing: border-box;
   width: 20px;
   height: 20px;
@@ -68,7 +68,7 @@
   background: none;
   cursor: pointer;
 }
-.sideBar__button:hover {
+.sideBar__hideButton:hover {
   background-color: var(--bg100);
   border-radius: 4px;
 }
