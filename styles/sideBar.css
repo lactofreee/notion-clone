@@ -18,6 +18,7 @@
   align-items: center;
   height: 44px;
   padding: 0.86rem 1rem;
+  border: 1px solid red;
 }
 .sidebar__titleContainer {
   width: 100%;
@@ -33,12 +34,17 @@
   border: 1px solid red;
   padding: 0 8px;
 }
+.sub-document-list {
+  margin-left: 20px;
+  list-style-type: none;
+}
 .sidebar__menuWrapper--documet {
   height: 30px;
   border: 1px solid blue;
   padding-left: 8px;
   display: flex;
   align-items: center;
+  margin-bottom: 5px;
 }
 
 /* 사이드 바 내부 document list의 item에 적용할 스타일 */
@@ -68,7 +74,7 @@
   cursor: pointer;
 }
 .sideBar__hideButton:hover {
-  background-color: black;
+  background-color: var(--bg100);
   border-radius: 4px;
 }
 .sidebar__icon {
