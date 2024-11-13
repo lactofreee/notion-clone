@@ -5,7 +5,7 @@ export const getRootDocuments = async () => {
   try {
     const response = await fetch(BASE_URL, {
       headers: {
-        "x-username": "teamouse1",
+        "x-username": "teamouse2",
       },
     });
     return await response.json();
@@ -18,11 +18,36 @@ export const getTargetContent = async (docId) => {
   try {
     const response = await fetch(BASE_URL, {
       headers: {
-        "x-username": "teamouse1",
+        "x-username": "teamouse2",
       },
     });
     return await response.json()
   } catch (error) {
     console.error(error);
+  }
+};
+
+export const postNewDocument = async (title, parentId = null) => {
+  try {
+    const response = await fetch(BASE_URL, {
+      method: "POST",
+      headers: {
+        "x-username": "teamouse2",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        title,
+        parent: parentId,
+      }),
+    });
+
+    if (!response.ok) {
+      throw new Error("Document 생성에 실패했습니다.");
+    }
+
+    return await response.json();
+  } catch (error) {
+    console.error("Document 생성 중 오류 발생:", error);
+    throw error;
   }
 };
