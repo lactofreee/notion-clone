@@ -18,4 +18,3 @@ export const navigate = (path) => {
 
 // 초기 이벤트 리스너
 window.addEventListener("popstate", router);
-document.addEventListener("DOMContentLoaded", router);

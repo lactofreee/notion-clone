@@ -2,7 +2,11 @@ import { getRootDocuments } from "../api/api.js";
 import { navigate, routes } from "../router/router.js";
 
 // 문서 목록을 가져와 동적 링크 생성
+let isListCreated = false;
+
 export const createDocumentsList = async () => {
+  if (isListCreated) return; // 이미 생성된 경우 실행하지 않음
+  isListCreated = true;
   const docsJSON = await getRootDocuments();
   docsJSON.forEach((doc) => {
     createDocument(doc.id, doc.title, "test text");
@@ -22,7 +26,7 @@ export const createDocument = (docId, docTitle, docContent) => {
   const link = document.createElement("a");
   link.href = path;
   link.innerText = docTitle;
-  link.onclick = function (event) {
+  link.onclick = (event) => {
     event.preventDefault();
     navigate(path);
   };
