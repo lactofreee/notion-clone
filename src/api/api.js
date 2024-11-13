@@ -8,6 +8,7 @@ export const getRootDocuments = async () => {
         "x-username": x_username,
       },
     });
+    console.log(response);
     return await response.json();
   } catch (error) {
     console.error(error);
@@ -16,11 +17,12 @@ export const getRootDocuments = async () => {
 
 export const getTargetContent = async (docId) => {
   try {
-    const response = await fetch(BASE_URL, {
+    const response = await fetch(`${BASE_URL}/${docId}`, {
       headers: {
         "x-username": x_username,
       },
     });
+    return await response.json();
     return await response.json();
   } catch (error) {
     console.error(error);

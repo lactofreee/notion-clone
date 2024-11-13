@@ -1,6 +1,7 @@
 import { createDocumentsList } from "./components/DocumentManager.js";
 import { setEventListener } from "./listeners/eventListeners.js";
 import { router } from "./router/router.js";
+import { initializeEditor } from "./components/Editor.js";
 
 // 문서 목록 불러오기 및 초기화
 document.addEventListener("DOMContentLoaded", () => {
@@ -18,5 +19,8 @@ document.addEventListener("DOMContentLoaded", () => {
   setEventListener(documentList, createDocumentButton);
   
   // 문서 목록 생성
-  createDocumentsList(documentList);
+  createDocumentsList();
+
+  // 에디터 초기화 추가
+  initializeEditor();
 });

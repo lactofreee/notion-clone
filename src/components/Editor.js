@@ -47,7 +47,7 @@ export const initializeEditor = () => {
 
   // ** 추후 id명 추가하고 getElementByID로 수정하기
   const titleElement = document.querySelector("h1");
-  const contentElement = document.querySelector("textarea");
+  const contentElement = document.querySelector("p");
 
   // 제목, 내용 중 하나라도 없으면(null이면) 함수 종료
   if (!titleElement || !contentElement) return;
@@ -66,3 +66,5 @@ export const initializeEditor = () => {
     debounceSave(documentId, titleElement.innerText, contentElement.innerText);
   });
 };
+
+
