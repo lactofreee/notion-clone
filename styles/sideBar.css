@@ -1,9 +1,10 @@
 @import url("/styles/variables.css");
 
 .screen__sidebar {
-  /* border: 1px solid red; */
+  border: 1px solid red;
   width: 250px;
-  min-width: 250px; /* flex-shrink 방지 */
+  /* flex-shrink 방지 */
+  min-width: 250px;
   transition: width 0.3s ease;
   background-color: var(--gray100);
   padding-inline: 8px;

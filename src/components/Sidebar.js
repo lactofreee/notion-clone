@@ -7,6 +7,7 @@ const onclickSideBarHide = () => {
 
   hideButton.addEventListener("click", () => {
     sideBar.classList.toggle("sidebar__hide");
+
     hamburger.style.display = "block";
   });
 };
