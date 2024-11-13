@@ -55,3 +55,36 @@
   /* hover했을 때 : hover 클래스 적용 */
   background-color: var(--bg100);
 }
+
+/* 사이드바 아이콘 */
+.sideBar__hideButton {
+  box-sizing: border-box;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  border: none;
+
+  background: none;
+  cursor: pointer;
+}
+.sideBar__hideButton:hover {
+  background-color: black;
+  border-radius: 4px;
+}
+.sidebar__icon {
+  box-sizing: border-box;
+  width: fit-content;
+  height: fit-content;
+}
+.sidebar__iconWrap {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+/* 사이드바 숨기기 css */
+.sidebar__hide {
+  min-width: 0px;
+  width: 0px;
+  padding: 0px;
+  transform: translateX(-250px);
+}
