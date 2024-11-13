@@ -7,27 +7,26 @@
     <link rel="stylesheet" href="./styles/main.css" />
   </head>
   <body class="screen">
-    <!-- 사이드바 -->
     <header class="screen__sidebar">
-      <!-- 사용자 -->
-      <div class="sidebar__pageTitle">
-        <div class="sidebar__titleContainer">
-          <div>👻 강수영의 스페이스</div>
-          <div>아이콘</div>
-        </div>
-      </div>
+      <h1 class="sidebar__pageTitle">
+        강수영의 Notion<button
+          id="sidebar__createDocument--button"
+          class="sidebar__createDocument--button"
+        >
+          +
+        </button>
+      </h1>
       <nav id="sidebar__menuWrapper" class="sidebar__menuWrapper"></nav>
     </header>
-    <!-- 메인 -->
     <main class="screen__pageView">
       <ul class="pageView__breadCrumbs">
         <li>bread crumb..</li>
-        <button>삭제</button>
       </ul>
       <section class="editor">
         <div id="editor__body" class="editor__body"></div>
       </section>
     </main>
     <script type="module" src="./src/main.js"></script>
+    <script defer src="./src/components/AddRootDocument.js"></script>
   </body>
 </html>
