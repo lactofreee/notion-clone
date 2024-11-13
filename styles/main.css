@@ -2,7 +2,7 @@
 @import url("/styles/variables.css");
 
 .screen__pageView {
-  flex : 1; /* 남은 공간 모두 차지 */
+  flex: 1; /* 남은 공간 모두 차지 */
   border: 1px solid green;
   display: flex;
   flex-direction: column;

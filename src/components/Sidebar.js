@@ -1,23 +1,10 @@
-const menuWrapperDocumets = document.getElementById(
-  "sidebar__menuWrapper--documets"
-);
-
-const getAllDocuments = async () => {
-  const data = await fetch("https://kdt-api.fe.dev-cos.com/documents", {
-    headers: {
-      "x-username": "teamouse",
-    },
+// 사이드바 숨이는 함수
+const sideBarHide = () => {
+  const sideBar = document.getElementById("sidebar");
+  const hideButton = document.getElementById("sideBar__hideButton");
+  hideButton.addEventListener("click", () => {
+    console.log("hi");
+    sideBar.classList.toggle("sidebar__hide"); // 'hidden' 클래스를 추가/제거하여 사이드바를 숨기거나 나타냄
   });
-  return await data.json();
 };
-
-// const displayDocsList = async () => {
-//   const docsInfo = await getAllDocuments();
-//   docsInfo.forEach((docInfo) => {
-//     const newDocLi = document.createElement("li");
-//     newDocLi.innerHTML = `<a href='' id="sidebar__menuWrapper--documentLink" data-url="doc${docInfo.id}">${docInfo.title}</a>`;
-//     menuWrapperDocumets.appendChild(newDocLi);
-//   });
-// };
-
-// displayDocsList();
+sideBarHide();
