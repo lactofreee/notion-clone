@@ -16,8 +16,22 @@
       <div class="sidebar__pageTitle">
         <div class="sidebar__titleContainer">
           <div>🐭 도시쥐와 시골쥐의 space</div>
-          <div>숨김 버튼</div>
-          <div>아이콘</div>
+          <div class="red sidebar__iconWrap">
+            <button class="sideBar__hideButton" id="sideBar__hideButton">
+              <img
+                src="./src/asset/sideBar-hide.svg"
+                alt="sideBar-hide"
+                class="sidebar__icon"
+              />
+            </button>
+            <button class="sideBar__hideButton">
+              <img
+                src="./src/asset/edit.svg"
+                alt="edit_btn"
+                class="sidebar__icon"
+              />
+            </button>
+          </div>
         </div>
       </div>
       <nav id="sidebar__menuWrapper" class="sidebar__menuWrapper"></nav>
@@ -33,5 +47,6 @@
       </section>
     </main>
     <script type="module" src="./src/main.js"></script>
+    <script type="module" src="./src/components/Sidebar.js"></script>
   </body>
 </html>
