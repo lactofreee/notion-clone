@@ -159,16 +159,16 @@ textarea:focus {
 
 /* 사이드 바 ---------------------------------- */
 .screen__sidebar {
-  /* border: 1px solid red; */
+  position: relative;
   width: 250px;
   min-width: 250px; /* flex-shrink 방지 */
   transition: width 0.3s ease;
   background-color: var(--black100);
-  padding-inline: 8px;
-
   display: flex;
+  padding: 0 8px;
   flex-direction: column;
   gap: 1.43rem;
+  border: 1px solid green;
 }
 .sidebar__pageTitle {
   display: flex;
@@ -178,9 +178,11 @@ textarea:focus {
   padding: 0.86rem 1rem;
 }
 .sidebar__titleContainer {
+  border: 1px solid red;
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .sidebar__menuWrapper {
   display: flex;
@@ -200,9 +202,8 @@ textarea:focus {
 }
 /* 사이드 바 ---------------------------------- */
 
-
 .screen__pageView {
-  flex : 1; /* 남은 공간 모두 차지 */
+  flex: 1; /* 남은 공간 모두 차지 */
   border: 1px solid green;
   display: flex;
   flex-direction: column;
@@ -227,3 +228,35 @@ textarea:focus {
   width: 708px;
 }
 
+/* 사이드바 아이콘 */
+.sideBar__hideButton {
+  box-sizing: border-box;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  border: none;
+
+  background: none;
+  cursor: pointer;
+}
+.sideBar__hideButton:hover {
+  background-color: black;
+  border-radius: 4px;
+}
+.sidebar__icon {
+  box-sizing: border-box;
+  width: fit-content;
+  height: fit-content;
+}
+.sidebar__iconWrap {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+/* 사이드바 숨기기 css */
+.sidebar__hide {
+  min-width: 0px;
+  width: 0px;
+  padding: 0px;
+  transform: translateX(-250px);
+}
